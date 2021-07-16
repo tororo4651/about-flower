@@ -1,0 +1,100 @@
+// セクション・カート
+
+
+// 変数・ミックスイン・関数
+@use "../../../global" as g;
+
+
+.cartSection {
+  max-width: 800px;
+  padding: 45px 0 30px;
+  margin: 0 auto;
+
+  &__heading {
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    background-color: #fff;
+
+    & + & {
+      margin-top: 6px;
+    }
+
+    &Link {
+      padding: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &Content {
+      flex-grow: 1;
+    }
+
+    &Heading {
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    &Price {
+      text-align: right;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &ImageWrapper {
+      margin-right: 20px;
+    }
+
+    &Image {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      object-position: left top;
+      font-family: "object-fit: cover;";
+    }
+  }
+
+  &__postage,
+  &__total {
+    margin-right: 20px;
+    text-align: right;
+    line-height: 1;
+
+    &Price {
+      margin-left: 10px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  &__postage {
+    margin-bottom: 16px;
+  }
+
+
+  @include g.mq(lg-min) {
+    padding: 65px 0 50px;
+
+    &__heading {
+      margin-bottom: 45px;
+    }
+
+    &__list {
+      margin-bottom: 30px;
+    }
+
+    &__postage,
+    &__total {
+      margin-right: 0;
+    }
+
+    &__postage {
+      margin-bottom: 20px;
+    }
+  }
+}

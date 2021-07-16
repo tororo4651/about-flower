@@ -1,0 +1,29 @@
+// ミックスイン
+
+
+// 変数
+@use "_variables.scss" as v;
+
+// マップ
+@use "sass:map";
+
+
+
+// メディアクエリ
+@mixin mq($breakpoint) {
+  @media #{map.get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-min($width: 768) {
+  @media (min-width: $width + px) {
+    @content;
+  }
+}
+
+@mixin mq-max($width: 767) {
+  @media (max-width: $width + 'px') {
+    @content;
+  }
+}

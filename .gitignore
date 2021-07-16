@@ -1,0 +1,10 @@
+# ディレクトリ
+node_modules
+dist
+
+# ファイル
+.Ds_Store
+Thumbs.db
+package-lock.json
+about-flower.code-workspace
+other.txt

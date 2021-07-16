@@ -1,0 +1,23 @@
+{
+  "top": {
+    "title": "about flower オンラインショップ",
+    "description": "説明文１",
+    "keywords": "about flower, SEASONAL FLOWER, フラワー, ギフト１",
+    "author": "山田 太郎１",
+    "copyright": "山田 花子１"
+  },
+  "flower05": {
+    "title": "スタッフ おまかせアレンジ | 商品詳細 | about flower オンラインショップ",
+    "description": "説明文２",
+    "keywords": "about flower, SEASONAL FLOWER, フラワー, ギフト２",
+    "author": "山田 太郎２",
+    "copyright": "山田 花子２"
+  },
+  "cart": {
+    "title": "CART | about flower オンラインショップ",
+    "description": "説明文３",
+    "keywords": "about flower, SEASONAL FLOWER, フラワー, ギフト３",
+    "author": "山田 太郎３",
+    "copyright": "山田 花子３"
+  }
+}

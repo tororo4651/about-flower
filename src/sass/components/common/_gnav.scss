@@ -1,0 +1,166 @@
+// グローバルナビゲーション
+
+
+// 変数・ミックスイン・関数
+@use "../../global" as g;
+
+
+
+// ボタン
+.gNavBtn {
+  width: 32px;
+  height: 20px;
+  padding-right: 5px;
+
+  &__bar {
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: #000;
+    transition: background-color 0.3s;
+
+    .is-gNavOpen & {
+      background-color: transparent;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      top: -10px;
+
+      .is-gNavOpen & {
+        top: 0;
+        transform: rotate(45deg);
+        background-color: #fff;
+      }
+    }
+
+    &::after {
+      bottom: -10px;
+
+      .is-gNavOpen & {
+        bottom: 0;
+        transform: rotate(-45deg);
+        background-color: #fff;
+      }
+    }
+  }
+
+
+  @include g.mq(lg-min) {
+    display: none;
+  }
+}
+
+
+
+// メニュー
+
+// 画面横幅 999px以下。
+@include g.mq(lg-max) {
+  .gNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    margin-top: 70px;
+    padding-top: 40px;
+    background-color: #a18f67;
+    opacity: 0;
+    pointer-events: none;
+
+    .is-gNavOpen & {
+      height: calc(100% - 70px);
+      opacity: 1;
+      pointer-events: auto;
+      transition: opacity 0.3s linear;
+    }
+
+
+    &__item {
+      margin-bottom: 26px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      color: #fff;
+    }
+
+    &__link {
+
+      &--cart {
+        display: block;
+        width: 250px;
+        line-height: 48px;
+        border: solid 2px;
+        border-radius: 24px;
+        margin: 0 auto;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+          background-color: g.$lightMainColor;
+        }
+      }
+    }
+  }
+
+  html.is-gNavOpen,
+  .is-gNavOpen body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+
+// 画面横幅 1000px以上。
+@include g.mq(lg-min) {
+  .gNav {
+
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: g.$lightTextColor;
+
+      & + & {
+        margin-left: 25px;
+      }
+    }
+
+    &__link {
+
+      &--cart {
+        display: block;
+        border: solid 2px;
+        border-radius: 19px / 50%;
+        width: 120px;
+        line-height: 36px;
+        text-align: center;
+        transition: background-color 2s, color;
+
+        &:hover {
+          background-color: g.$lightMainColor;
+          color: #fff;
+          border-color: g.$mainColor;
+        }
+      }
+    }
+  }
+}

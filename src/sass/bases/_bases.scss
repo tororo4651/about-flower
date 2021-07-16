@@ -1,0 +1,36 @@
+// ベース
+
+
+// 変数・ミックスイン・関数
+@use "../global/" as g;
+
+
+// ress
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+
+// リセットCSS
+@import "_reset.scss";
+
+
+
+body {
+  padding-top: 70px;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  color: g.$textColor;
+
+  @include g.mq(lg-min) {
+    padding-top: 100px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}

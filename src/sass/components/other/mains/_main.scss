@@ -1,0 +1,14 @@
+// メインコンテンツ
+
+
+// 変数・ミックスイン・関数
+@use "../../../global" as g;
+
+
+.main {
+  background-color: g.$baseColor;
+
+  &__pointSection {
+    margin-bottom: 60px;
+  }
+}

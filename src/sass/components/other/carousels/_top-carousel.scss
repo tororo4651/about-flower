@@ -1,0 +1,32 @@
+// カルーセル・トップページ
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/" as g;
+
+
+.topCarousel {
+  position: relative;
+  z-index: 1;
+  background-color: #ded6c5;
+
+  .swiper-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: g.$lightMainColor;
+  }
+
+  img {
+    width: 100%;
+  }
+}

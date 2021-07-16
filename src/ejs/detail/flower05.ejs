@@ -1,0 +1,292 @@
+<html lang="ja">
+
+<%- include('../components/common/_head.ejs', flower05) %>
+
+<body class="flower05">
+
+<%- include('../components/common/_header') %>
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/">Home</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/onlineshop/">Online Shop</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    スタッフおまかせアレンジ
+  </li>
+</ol>
+
+<main class="main">
+  <section class="detailSection">
+    <div class="detailSection__photo">
+      <figure class="detailSection__figure">
+        <img class="detailSection__image" src="/images/detail/flower01.jpg" alt="">
+      </figure>
+
+      <ul class="detailSection__thumbnail">
+        <li class="detailSection__thumbnailItem">
+          <a class="detailSection__thumbnailLink" id="test" href="/images/detail/flower01.jpg">
+            <img class="detailSection__thumbnailImage" src="/images/detail/flower01.jpg" alt="">
+          </a>
+        </li>
+
+        <li class="detailSection__thumbnailItem">
+          <a class="detailSection__thumbnailLink" href="/images/detail/flower02.jpg">
+            <img class="detailSection__thumbnailImage" src="/images/detail/flower02.jpg" alt="">
+          </a>
+        </li>
+
+        <li class="detailSection__thumbnailItem">
+          <a class="detailSection__thumbnailLink" href="/images/detail/flower03.jpg">
+            <img class="detailSection__thumbnailImage" src="/images/detail/flower03.jpg" alt="">
+          </a>
+        </li>
+
+        <li class="detailSection__thumbnailItem">
+          <a class="detailSection__thumbnailLink" href="/images/detail/flower04.jpg">
+            <img class="detailSection__thumbnailImage" src="/images/detail/flower04.jpg" alt="">
+          </a>
+        </li>
+
+        <li class="detailSection__thumbnailItem">
+          <a class="detailSection__thumbnailLink" href="/images/detail/flower05.jpg">
+            <img class="detailSection__thumbnailImage" src="/images/detail/flower05.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div><!-- /detailSection__photo -->
+
+    <div class="detailSection__content">
+      <h2 class="detailSection__heading">スタッフ おまかせアレンジ</h2>
+
+      <p class="detailSection__subHeading">季節のお花をお楽しみいただけます</p>
+
+      <p class="detailSection__price">¥3,800</p>
+
+      <p class="detailSection__text">大輪で華やかな季節のお花と、小分けにして飾りやすい小花を組み合わせたアレンジです。お好みの色で花束をお作りいたします。</p>
+
+      <button class="detailSection__btn primaryBtn" id="cartBtn" type="button">カートに入れる</button>
+    </div><!-- /.detailSection__content -->
+  </section>
+
+  <section class="pointSection main__pointSection">
+    <div class="pointSection__inner">
+      <section class="pointSection__section">
+        <h3 class="pointSection__sectionHeading">
+          POINT1<br>
+          イメージからアレンジ
+        </h3>
+
+        <p class="pointSection__sectionText">ナチュラル・シンプル・ゴージャスからイメージをお選びいただいて、当店スタッフが花の種類をアレンジいたします。</p>
+      </section>
+
+      <section class="pointSection__section">
+        <h3 class="pointSection__sectionHeading">
+          POINT2<br>
+          満足できるボリューム
+        </h3>
+
+        <p class="pointSection__sectionText">ボリュームたっぷりでシンプルな空間に映える花束です。配達前にお写真をメールいたします。</p>
+      </section>
+
+      <section class="pointSection__section">
+        <h3 class="pointSection__sectionHeading">
+          POINT3<br>
+          花束・BOXをセレクト
+        </h3>
+
+        <p class="pointSection__sectionText">ボリュームたっぷりでシンプルな空間に映える花束です。配達前にお写真をメールいたします。</p>
+      </section>
+    </div><!-- /.pointSection__inner -->
+  </section>
+
+  <section class="flowerSection">
+    <h2 class="flowerSection__heading primaryHeading">Recommend</h2>
+
+    <div class="flowerSection__cards">
+      <section class="flowerSection__card flowerCard">
+        <a class="flowerCard__link" href="/detail/flower01.html">
+          <picture class="flowerCard__imageWrapper">
+            <source
+              type="image/webp"
+
+              srcset="/images/card/flower01.webp">
+
+            <source
+              srcset="/images/card/flower01.jpg 320w,
+                      /images/card/flower01@2x.jpg 640w"
+
+              sizes="(max-width: 999px) calc((100vw - 8px) * 0.32),
+                     (min-width: 1000px) 320px">
+
+            <img class="flowerCard__image" src="/images/card/flower01.jpg" alt="">
+          </picture>
+
+          <div class="flowerCard__content">
+            <h3 class="flowerCard__heading">ひまわりのアレンジ花束</h3>
+
+            <p class="flowerCard__price">¥3,800</p>
+          </div><!-- /.flowerCard__content -->
+        </a>
+      </section>
+
+      <section class="flowerSection__card flowerCard">
+        <a class="flowerCard__link" href="/detail/flower02.html">
+          <picture class="flowerCard__imageWrapper">
+            <!-- <source
+              type="image/webp"
+
+              srcset="/images/card/flower02.webp"> -->
+
+            <source
+              srcset="/images/card/flower02.jpg 320w,
+                      /images/card/flower02@2x.jpg 640w"
+
+              sizes="(max-width: 999px) calc((100vw - 8px) * 0.32),
+                     (min-width: 1000px) 320px">
+
+            <img class="flowerCard__image" src="/images/card/flower02.jpg" alt="">
+          </picture>
+
+          <div class="flowerCard__content">
+            <h3 class="flowerCard__heading">パープル系ドライフラワー</h3>
+
+            <p class="flowerCard__price">¥3,800</p>
+          </div><!-- /.flowerCard__content -->
+        </a>
+      </section>
+
+      <section class="flowerSection__card flowerCard">
+        <a class="flowerCard__link" href="/detail/flower03.html">
+          <picture class="flowerCard__imageWrapper">
+            <!-- <source
+              type="image/webp"
+
+              srcset="/images/card/flower03.webp"> -->
+
+            <source
+              srcset="/images/card/flower03.jpg 320w,
+                      /images/card/flower03@2x.jpg 640w"
+
+              sizes="(max-width: 999px) calc((100vw - 8px) * 0.32),
+                     (min-width: 1000px) 320px">
+
+            <img class="flowerCard__image" src="/images/card/flower03.jpg" alt="">
+          </picture>
+
+          <div class="flowerCard__content">
+            <h3 class="flowerCard__heading">カーネーションと花瓶のセット</h3>
+
+            <p class="flowerCard__price">¥4,000</p>
+          </div><!-- /.flowerCard__content -->
+        </a>
+      </section>
+
+      <section class="flowerSection__card flowerCard">
+        <a class="flowerCard__link" href="/detail/flower04.html">
+          <picture class="flowerCard__imageWrapper">
+            <!-- <source
+              type="image/webp"
+
+              srcset="/images/card/flower04.webp"> -->
+
+            <source
+              srcset="/images/card/flower04.jpg 320w,
+                      /images/card/flower04@2x.jpg 640w"
+
+              sizes="(max-width: 999px) calc((100vw - 8px) * 0.32),
+                     (min-width: 1000px) 320px">
+
+            <img class="flowerCard__image" src="/images/card/flower04.jpg" alt="">
+          </picture>
+
+          <div class="flowerCard__content">
+            <h3 class="flowerCard__heading">紫陽花のバスケットアレンジ</h3>
+
+            <p class="flowerCard__price">¥5,000</p>
+          </div><!-- /.flowerCard__content -->
+        </a>
+      </section>
+
+      <section class="flowerSection__card flowerCard">
+        <a class="flowerCard__link" href="/detail/flower05.html">
+          <picture class="flowerCard__imageWrapper">
+            <!-- <source
+              type="image/webp"
+
+              srcset="/images/card/flower05.webp"> -->
+
+            <source
+              srcset="/images/card/flower05.jpg 320w,
+                      /images/card/flower05@2x.jpg 640w"
+
+              sizes="(max-width: 999px) calc((100vw - 8px) * 0.32),
+                     (min-width: 1000px) 320px">
+
+            <img class="flowerCard__image" src="/images/card/flower05.jpg" alt="">
+          </picture>
+
+          <div class="flowerCard__content">
+            <h3 class="flowerCard__heading">スタッフ おまかせアレンジ
+            </h3>
+
+            <p class="flowerCard__price">¥3,800</p>
+          </div><!-- /.flowerCard__content -->
+        </a>
+      </section>
+
+      <section class="flowerSection__card flowerCard">
+        <a class="flowerCard__link" href="/detail/flower06.html">
+          <picture class="flowerCard__imageWrapper">
+            <!-- <source
+              type="image/webp"
+
+              srcset="/images/card/flower06.webp"> -->
+
+            <source
+              srcset="/images/card/flower06.jpg 320w,
+                      /images/card/flower06@2x.jpg 640w"
+
+              sizes="(max-width: 999px) calc((100vw - 8px) * 0.32),
+                     (min-width: 1000px) 320px">
+
+            <img class="flowerCard__image" src="/images/card/flower06.jpg" alt="">
+          </picture>
+
+          <div class="flowerCard__content">
+            <h3 class="flowerCard__heading">ラベンダーとグリーンのアレンジ</h3>
+
+            <p class="flowerCard__price">¥2,800</p>
+          </div><!-- /.flowerCard__content -->
+        </a>
+      </section>
+    </div><!-- /.flowerSection__cards -->
+  </section>
+</main>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/">Home</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/onlineshop/">Online Shop</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    スタッフおまかせアレンジ
+  </li>
+</ol>
+
+
+<%- include('../components/common/_footer') %>
+
+<%- include('../components/common/_script') %>
+
+</body>
+</html>

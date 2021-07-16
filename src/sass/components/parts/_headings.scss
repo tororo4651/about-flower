@@ -1,0 +1,26 @@
+// 見出し
+
+
+// 変数・ミックスイン・関数
+@use "../../global/" as g;
+
+
+// プライマリ
+.primaryHeading {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+
+
+  @include g.mq('lg-min') {
+    font-size: 30px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      border-top: solid 2px g.$lightTextColor;
+      margin: 36px auto 0;
+    }
+  }
+}

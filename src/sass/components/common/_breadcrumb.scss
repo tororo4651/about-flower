@@ -1,0 +1,38 @@
+// パンくずリスト
+
+
+// 変数・ミックスイン・関数
+@use "../../global/" as g;
+
+
+.breadcrumb {
+  padding: 22px 20px;
+  background-color: #e2ded4;
+  display: flex;
+
+  &__item {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    & + & {
+      &::before {
+        content: "/";
+        margin: 0 0.5em;
+      }
+    }
+  }
+
+  &__link {
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+
+  @include g.mq(lg-min) {
+    padding: 22px 40px;
+  }
+}

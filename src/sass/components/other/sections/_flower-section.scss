@@ -1,0 +1,37 @@
+// セクション・フラワー
+
+
+// 変数・ミックスイン・関数
+@use "../../../global/" as g;
+
+
+.flowerSection {
+  max-width: 1000px;
+  padding: 20px 4px 40px;
+  margin: 0 auto;
+
+  &__heading {
+    margin-bottom: 28px;
+  }
+
+  &__cards {
+    margin-bottom: -2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 32%;
+    margin-bottom: 2%;
+  }
+
+
+  @include g.mq(lg-min) {
+    padding: 40px 0 85px;
+
+    &__heading {
+      margin-bottom: 50px;
+    }
+  }
+}

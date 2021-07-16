@@ -1,0 +1,141 @@
+<html lang="ja">
+
+<%- include('../components/common/_head.ejs', cart) %>
+
+<body class="cart">
+
+<%- include('../components/common/_header.ejs') %>
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/">Home</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/onlineshop/">Online Shop</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    Cart
+  </li>
+</ol>
+
+<main class="main">
+  <section class="cartSection">
+    <h2 class="cartSection__heading primaryHeading">Cart</h2>
+
+    <ul class="cartSection__list">
+      <li class="cartSection__item">
+        <a class="cartSection__itemLink" href="/detail/flower02.html">
+          <div class="cartSection__itemContent">
+            <h3 class="cartSection__itemHeading">パープル系ドライフラワー</h3>
+
+            <p class="cartSection__itemPrice">¥3,800</p>
+          </div><!-- /.cartSection__itemContent -->
+
+          <picture class="cartSection__itemImageWrapper">
+            <!-- <source
+              type="image/webp"
+              srcset="/images/card/flower02.webp"> -->
+
+            <source
+              srcset="/images/card/flower02.jpg 320w,
+                      /images/card/flower02@2x.jpg 640w"
+              sizes="90px">
+
+            <img class="cartSection__itemImage" src="/images/card/flower02.jpg" alt="">
+          </picture>
+        </a>
+      </li>
+
+      <li class="cartSection__item">
+        <a class="cartSection__itemLink" href="/detail/flower02.html">
+          <div class="cartSection__itemContent">
+            <h3 class="cartSection__itemHeading">スタッフ おまかせアレンジ</h3>
+
+            <p class="cartSection__itemPrice">¥3,800</p>
+          </div><!-- /.cartSection__itemContent -->
+
+          <picture class="cartSection__itemImageWrapper">
+            <source
+              type="image/webp"
+              srcset="/images/card/flower05.webp">
+
+            <source
+              srcset="/images/card/flower05.jpg 320w,
+                      /images/card/flower05@2x.jpg 640w"
+              sizes="90px">
+
+            <img class="cartSection__itemImage" src="/images/card/flower05.jpg" alt="">
+          </picture>
+        </a>
+      </li>
+
+      <li class="cartSection__item">
+        <a class="cartSection__itemLink" href="/detail/flower02.html">
+          <div class="cartSection__itemContent">
+            <h3 class="cartSection__itemHeading">ひまわりのアレンジ花束</h3>
+
+            <p class="cartSection__itemPrice">¥3,800</p>
+          </div><!-- /.cartSection__itemContent -->
+
+          <picture class="cartSection__itemImageWrapper">
+            <source
+              type="image/webp"
+              srcset="/images/card/flower01.webp">
+
+            <source
+              srcset="/images/card/flower01.jpg 320w,
+                      /images/card/flower01@2x.jpg 640w"
+              sizes="90px">
+
+            <img class="cartSection__itemImage" src="/images/card/flower01.jpg" alt="">
+          </picture>
+        </a>
+      </li>
+    </ul>
+
+    <p class="cartSection__postage">送料<span class="cartSection__postagePrice">¥500</span></p>
+
+    <p class="cartSection__total">合計<span class="cartSection__totalPrice">¥11,900</span></p>
+  </section>
+
+  <form class="loginForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+    <h2 class="loginForm__heading primaryHeading">Member Login</h2>
+
+    <label class="loginForm__label" for="id">会員ID / メールアドレス</label>
+    <input class="loginForm__input" id="id" type="email" name="id" placeholder="テキストが入ります。">
+
+    <label class="loginForm__label" for="password">パスワード</label>
+    <input class="loginForm__input" id="password" type="password" name="password">
+
+    <input type="button" class="loginForm__btn primaryBtn primaryBtn--login" value="ログインして購入する">
+
+    <p class="loginForm__text">
+      <a class="loginForm__textLink" href="#">新規会員登録して購入する</a>
+    </p>
+  </form>
+</main>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/">Home</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    <a class="breadcrumb__link" href="/onlineshop/">Online Shop</a>
+  </li>
+
+  <li class="breadcrumb__item">
+    Cart
+  </li>
+</ol>
+
+
+<%- include('../components/common/_footer') %>
+
+<%- include('../components/common/_script.ejs') %>
+
+</body>
+</html>
